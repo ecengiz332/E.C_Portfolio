@@ -30,9 +30,14 @@
 		display: grid;
 		grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
 		overflow: hidden;
-		background-color: #fff;
+		background-color: #d3968c;
 		border: 1px solid #c8ccc8;
 		border-radius: 8px;
+		margin-bottom: 2rem;
+	}
+
+	.project--secondary {
+		margin-top: 1rem;
 	}
 
 	.project__image {
