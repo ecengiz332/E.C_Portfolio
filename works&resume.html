@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js" defer></script>
     <title>Works & Resume</title>
 </head>
 <body>
@@ -12,16 +13,39 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a>
-            <li><a href="about.html">Who I am.</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Who I am</a></li>
             <li><a href="works&resume.html">Works & Resume</a></li>
             <li><a href="resources.html">Technical Resources</a></li>
+            <li><button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark mode</button></li>
         </ul>
     </nav>
-    <main>
-        <section> 
-            <h2>Resume</h2>
-            <h3> <a href="https://docs.google.com/document/d/1e3HZnqHIhcmi2fiYlaB1koife5-mOIKi-sYRRbMZHxE/edit?tab=t.0" target="_blank" rel="noopener noreferrer">My professional background-Resume </a> </h3>
+    <main class="work-page">
+        <section class="resume" aria-labelledby="resume-heading">
+            <h2 id="resume-heading">Resume</h2>
+            <article class="resume-card">
+                <div class="resume__content">
+                    <p class="project__label">Professional background</p>
+                    <h3>My professional background</h3>
+                    <p>Creative, curious, and continuously learning — I build practical web experiences and strengthen my technical skills through hands-on projects and self-driven exploration.</p>
+                    <ul class="project__technologies" aria-label="Resume focus areas">
+                        <li>Web Development</li>
+                        <li>UI Design</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                    <a class="project__link" href="https://docs.google.com/document/d/1e3HZnqHIhcmi2fiYlaB1koife5-mOIKi-sYRRbMZHxE/edit?tab=t.0" target="_blank" rel="noopener noreferrer">View my resume</a>
+                </div>
+                <div class="resume__aside">
+                    <div class="resume__stat">
+                        <span class="resume__stat-number">3+</span>
+                        <span class="resume__stat-label">Learning-focused projects</span>
+                    </div>
+                    <div class="resume__stat">
+                        <span class="resume__stat-number">100%</span>
+                        <span class="resume__stat-label">Curiosity-driven growth</span>
+                    </div>
+                </div>
+            </article>
         </section>
         <section class="projects" aria-labelledby="projects-heading">
             <h2 id="projects-heading">Coding Projects</h2>
@@ -68,7 +92,6 @@
                 <img
                     class="project__image"
                     src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80" alt="a snip of a computer screen with JavaScript code in it"
-                    alt="A code editor showing JavaScript practice in a development environment"
                     loading="lazy"
                 >
                 <div class="project__content">

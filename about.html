@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js" defer></script>
     <title>Who I am</title>
 </head>
 <body>
@@ -12,18 +13,23 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a>
-            <li><a href="about.html">Who I am.</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Who I am</a></li>
             <li><a href="works&resume.html">Works & Resume</a></li>
             <li><a href="resources.html">Technical Resources</a></li>
+            <li><button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark mode</button></li>
         </ul>
     </nav>
-    <main>
-        <section>
-            <p> I am just your average person trying to learn everything and anything that I can; day by day. I am passionate about technology, poetry, and music and I constantly seek to improve my skills; not just in those aspects but in every aspect of my life. In my free time I enjoy exploring new technologies and creative projects; whether that be coding, or producing music. What got me intrigued in coding was the creativity of coding and how I could build a website from total scratch and ultimatelydevelop more skill sets for myself. </p>
-        </section>
-        <section>
-            <p>My hobbies include dancing, producing music, listening to music, and just expanding my knowledge. I also enjoy watching movies and just self-reflecting and quite frankly a huge coffee lover.</p>
+    <main class="content-page about-page">
+        <section class="about-layout">
+            <figure class="about-photo">
+                <img src="assets/most-pfp-pics.jpg" alt="Profile photo of the person creating this portfolio">
+            </figure>
+            <div class="about-copy">
+                <p>I am just your average person trying to learn everything and anything that I can; day by day. I am passionate about technology, poetry, and music and I constantly seek to improve my skills; not just in those aspects but in every aspect of my life. </p>
+                <p>In my free time I enjoy exploring new technologies and creative projects; whether that be coding, or producing music. What got me intrigued in coding was how I could build a website from total scratch and ultimately develop more skill sets for myself. </p>
+                <p>My hobbies include dancing, towel embroidery, hiking, and learning everything and anything to expand my knowledge.</p>
+            </div>
         </section>
     </main>
     <footer>
