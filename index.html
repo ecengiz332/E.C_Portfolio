@@ -5,6 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="theme.js" defer></script>
+    <style>
+        .home-page {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.25rem;
+            align-items: stretch;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: calc(100% - 2rem);
+            max-width: 1100px;
+        }
+
+        .home-page > section {
+            display: flex;
+            align-items: flex-start;
+            grid-column: auto;
+            min-width: 0;
+            margin: 0;
+            padding: clamp(1rem, 2vw, 1.5rem);
+            background: var(--surface);
+            border: 1px solid var(--bubble-border);
+            border-radius: 14px;
+            box-shadow: 0 10px 24px var(--shadow);
+            box-sizing: border-box;
+        }
+
+        .home-page > section:nth-child(1) {
+            grid-column: 1;
+        }
+
+        .home-page > section:nth-child(2) {
+            grid-column: 2;
+        }
+
+        .home-page > section:nth-child(3) {
+            grid-column: 1 / -1;
+        }
+
+        .home-page > section h2,
+        .home-page > section p {
+            display: block;
+            width: 100%;
+            margin: 0;
+            color: var(--bubble-text);
+            line-height: 1.55;
+        }
+
+        .home-page > section h2 {
+            font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+        }
+
+        .home-page > section p {
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        @media (max-width: 699px) {
+            .home-page {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .home-page > section:nth-child(1),
+            .home-page > section:nth-child(2),
+            .home-page > section:nth-child(3) {
+                grid-column: 1;
+            }
+        }
+    </style>
     <title>E.C_Portfolio</title>
 </head>
 <body>
@@ -21,20 +94,24 @@
             <li><button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Too Light?</button></li>
         </ul>
     </nav>
-    <main class="content-page">
+    <main class="content-page home-page">
         <section>
-<p>This coding journey started on an average day. I was interested in coding so as any human being would do; I started using free resources online. YouTube was great but, it definitely was confusing as I searched "how to code for beginners" at a unreasonable late hour in the night. It was clear that I was sleep-deprived and desperately needed some sleep. I continued my coding research and finding alternatives; I stumbled upon free online websites learning how to code. My first coding expierence was writing in HTML and the topic I wrote about was "how to cook boiled eggs". It was a humbling experience to say nontheless to learn coding from the so little knowledge I had and as I grew my skills using free websites eventually I took a college course on web development. I grew my skills from the course and continued to practice on my own and now we are here. I am still learning and growing my skills but, I am proud of how far I have come. </p>
+<h2>My coding journey began on an average, sleep-deprived night. Motivated by curiosity and a desire to create my skills; I found myself deep in a late-night Youtube rabbit hole researching "how to code for dummys?". I ended up realizing that I needed to take a different appoarch. I turned to interactive web platforms. My very first coding expierence? An HTML page loyal to the art of cooking boiled eggs. It was a humbling experience for sure but, that's how I started to grow my fascination in the field of web development.</h2>
+        </section>
+        <section>
+<h2>Time went on and as I grew my skills I have started transitioning from my self-taught learning to the engineering realms. I got myself enrolled in a college course for web development. That major step is what helped me unlock a deeper understanding of software creation. Today, with a solid command of HTML, and CSS. I am still self-teaching myself and freelancing as everyone says "coding is always evolving and you learn continuously" and that is a step I am willing to take.</h2>
         </section>
         <section> 
-<p>The links above are more information; "Who I am" and what I do on my free time. "Works & Resume" will showcase my coding projects and my professional background. "Technical Resources" will talk more about how I process information specifically for coding and how I have kept myself organized in my learning. The ultimate goal is to show my progress and dedication to the field of web development.</p>
+<p>I view coding as the art of solving problems and bringing ideas to life. Whether I am writing building a website in HTML and CSS or structuring data and logic in Python and JavaScript. I strive on breaking complex problems into manageable pieces. I do not want to just write code that works; I want to be able to understand why it works and how to optimize it. I am incredible proud of how far I have came, and I approach the screen with the same curiosity that started this coding journey— just with much better sleeping habits.</p>
         </section>
     </main>
     <footer class="site-footer" aria-labelledby="contact-heading">
         <div class="footer-inner">
             <div class="footer-intro">
-                <p class="footer-eyebrow">LET'S CONNECT</p>
-                <h2 id="contact-heading">Get in touch</h2>
-                <p>Have a question or want to connect? Reach out by email or find me on Instagram.</p>
+                <p class="footer-eyebrow">Want to Connect?</p>
+                <h2 id="contact-heading">Connect with me!</h2>
+                <p>Have a question or want to connect? Reach out by email or find me on Instagram where I show behind the scenes of my work.</p>
+                <p>I'd love to hear from you!</p>
             </div>
             <address class="footer-contacts">
                 <a class="footer-contact" href="mailto:esracengiz2022@gmail.com">

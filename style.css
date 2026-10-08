@@ -134,6 +134,7 @@
     }
 
     body > header p,
+    body > header h2,
     .content-page > header p {
         max-width: 48rem;
         margin: 0.75rem auto 0;
@@ -143,7 +144,19 @@
         line-height: 1.7;
     }
 
+    .content-page > header p {
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+
     body > header p {
+        padding-top: 0.75rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    body > header h2 {
         padding-top: 0.75rem;
         border-top: 1px solid rgba(255, 255, 255, 0.4);
     }
@@ -539,6 +552,11 @@
 		border-radius: 14px;
 		box-shadow: 0 10px 24px var(--shadow);
 		color: var(--bubble-text);
+	}
+
+	.content-page > header h1,
+	.content-page > section h2 {
+		margin-top: 0;
 	}
 
 	.content-page > header h1,
