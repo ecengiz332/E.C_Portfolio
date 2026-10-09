@@ -5,7 +5,7 @@ const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 function setTheme(theme, savePreference = false) {
     document.documentElement.dataset.theme = theme;
     themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
-    themeToggle.textContent = theme === "dark" ? "🌙 too dark?" : "☀️ too bright?";
+    themeToggle.textContent = theme === "dark" ? "⋆.˚🌙 too dark?" : "☁︎༄.°☀️ too bright?";
     themeToggle.setAttribute(
         "aria-label",
         `Switch to ${theme === "dark" ? "light" : "dark"} mode`
